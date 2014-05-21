@@ -1,0 +1,4 @@
+majestic
+========
+
+Enom Luxury Template
