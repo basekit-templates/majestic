@@ -1,0 +1,32 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="bk-header">
+    <div class="wrapper clearfix">
+      <div class="companyheader clearfix">
+          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+          {{widget('companyname', 'companyname', {"business": "MAJESTIC"})|raw}}
+      </div>
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </div>
+</header> 
+
+<div class="feature-container">
+	  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+</div>
+
+<div class="wrapper clearfix">
+    {{zone('main')|raw}}
+</div>
+
+<footer class="bk-footer">
+    <div class="footer-container wrapper">
+        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+{% endblock %}
+

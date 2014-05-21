@@ -1,4 +1,4 @@
-majestic
-========
+Majestic
+=====
 
 Enom Luxury Template

@@ -1,0 +1,616 @@
+/* ===============================
+   IMPORT CSS
+   =============================== */
+
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+/* 
+
+Table of Contents -
+
+  1. Default
+  2. Variable Media Queries
+  3. Custom CSS
+  4. Menu sections navigation
+  5. Header
+  6. Menu
+  7. Footer
+  8. SOCIAL BAR WIDGET / PROFILE DATA
+  9. IPHONE WIDTH
+  10. Print overrides.
+*/
+
+/* ===============================
+    Default
+   =============================== */
+
+.contain {
+    position: relative;
+}
+
+body {
+    font-family:@font-swatch5-font-family;
+    margin: 0;
+    padding: 0;
+    background-color:lighten(@color-swatch3,10%);
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 15%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+/* ===============================
+    CUSTOM CSS
+   =============================== */
+
+.contacttextwidget {
+    text-align:center;
+}
+
+.bk-content-text h2 {
+    overflow:hidden;
+}
+
+.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
+    padding:3px;
+}
+
+.main {
+    padding:0;
+}
+
+.socialheader {
+    float:none;
+}
+
+.logo, .companyname {
+    margin:0px auto;
+    display:table;
+}
+
+.contain{
+    margin-top:-2px;
+} 
+
+/* ===============================
+   FEATURE
+   =============================== */
+
+.feature-btn {
+    display: block;
+    .btn span {
+        background-color: @color-swatch3;
+        padding: 20px;
+        display: table;
+        &:hover {
+           background-color: lighten(@color-swatch3,15%);
+        }
+    }
+}
+
+.widget.feature .feature-bgimg .content button {
+    margin:0;
+    padding: 0;
+}
+
+.widget.feature button {
+    background: @color-swatch2;
+}
+
+.feature-container{
+    border-bottom:8px solid lighten(@color-swatch3,30%);
+}
+
+.widget.feature .feature-bgimg {
+    height:600px;
+}
+
+.widget.feature .feature-bgimg .content .spare {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding:20px 0px;
+}
+
+.widget.feature h2, .widget.feature h3, .feature-btn {
+    margin:0 15%;
+}
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+.widget.extendednavigation {
+    float:right;
+    margin-top:10px;
+}
+
+.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+    color:lighten(@color-swatch3,35%);
+}
+
+.widget .extendednavigation ul li:hover ul {
+    background-color:lighten(@color-swatch3,15%);
+}
+
+.widget .extendednavigation ul li.folder:after {
+    border-top-color:@color-swatch1;
+    top: 49%;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+
+.bk-header {
+    padding: 20px 0;
+    background-color: @color-swatch2;
+    border-bottom:8px solid lighten(@color-swatch3,30%);
+}
+
+.companyheader {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 6px 0 0;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+    display: block;
+    float: left;
+}
+
+.widget.companyname a {
+    font-family: @font-swatch10-font-family;
+    font-weight: @font-swatch10-font-weight;
+    color: @font-swatch10-color;
+    line-height: @font-swatch10-line-height;
+    letter-spacing: @font-swatch10-letter-spacing;
+    font-size: @font-swatch10-font-size;
+    
+}
+
+.widget.companyname a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* LOGO */
+
+.widget.logo {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+/* ===============================
+   MAIN ZONE
+  =============================== */
+
+.widget.content {
+    margin-top:30px;
+}
+
+/* ===============================
+   DESIGN SPECIFIC
+  =============================== */
+
+.contactform input, .contactform textarea, .widget.profile form fieldset input, .signupform fieldset input {
+    background-color:lighten(@color-swatch3,20%);
+    border:0;
+}
+
+.widget.profile a {
+    color:@font-swatch5-color;
+}
+
+.widget.socialicons span a:hover {
+    background-color:@color-swatch3;
+}
+
+.contactform input, .contactform textarea, .widget.profile form fieldset input, .signupform fieldset input {
+    text-indent:5px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next, .widget.responsiveslideshow .slideshow-widget .btn-prev {
+    padding:5px;
+}
+
+/* ===============================
+   BUTTON WIDGET
+   =============================== */
+.widget.button button {
+    background:@color-swatch3;
+    padding:15px 20px;
+    &:hover {
+        background: lighten(@color-swatch3, 15%);
+    }
+}
+
+/* ===============================
+   CONTACT FORM WIDGET
+   =============================== */
+
+.contactform button.btn {
+    padding: 15px 20px;
+    background-color:@color-swatch3;
+}
+
+.contactform textarea {
+    height:150px;
+}
+
+/* ===============================
+   SIGN UP FORM
+   =============================== */
+
+.signupform fieldset button {
+    padding:10px 13px 11px 13px;
+    background-color: @color-swatch3;
+}
+
+/* ===============================
+   FORM
+   =============================== */
+
+.widget.profile form button {
+    background-color:@color-swatch3;
+    padding:12px;
+}
+
+.widget.profile form fieldset input {
+    width:65%;
+    @media @tablet {
+        width: 90%;
+    }
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+.widget.paypalbuynow .widget.button.paypal {
+    background-color:@color-swatch3;
+    padding:20px 10px 20px 40px;
+}
+
+/* ===============================
+   TWITTER BUTTON
+   =============================== */
+
+.widget.tweet a {
+    background-color:@color-swatch3;
+}
+
+/* ===============================
+   DROPBOX BUTTON
+   =============================== */
+
+.widget.dropbox button {
+    background-color:@color-swatch3;
+    padding:20px 10px 20px 40px;
+}
+
+.widget.dropbox button:hover {
+    background-image:image('/images/dropbox-icon.png');
+    background-repeat:no-repeat;
+    background-position: 10px;
+    background-size: 22px;
+}
+
+.widget.dropbox button:hover, .contactform button.btn:hover, .widget.tweet a:hover, .widget.paypalbuynow .widget.button.paypal:hover, .widget.profile form button:hover, .signupform fieldset button:hover   {
+  cursor: pointer;
+  background-color:lighten(@color-swatch3,15%);
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* ===============================
+    FOOTER
+   =============================== */
+
+.bk-footer {
+    padding:20px 0px 50px 0px;
+    background-color:@color-swatch3;
+    margin-top:40px;
+}
+
+.widget.profile .bk-profile-socialicons {
+    float:right;
+    margin:0;
+}
+
+#copyright.widget.profile {
+    float:left;
+    margin-top:5px;
+}
+
+footer .widget.profile .bk-profile-socialicons span a {
+    background-color:transparent;
+    &:hover{
+        background-color:lighten(@color-swatch3,15%);
+    }
+}
+
+/* ===============================
+   BLOCKQUOTES
+   =============================== */
+
+blockquote {
+    background-color:transparent;
+}
+
+blockquote:before {
+    font-size:@font-swatch1-font-size;
+}
+
+/* ===============================
+   9. IPAD WIDTH
+   =============================== */
+@media only screen and (max-width: 1150px) {
+    .widget.feature .spare {
+        width:50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* UL ALIGN RIGHT */
+
+    .widget .extendednavigation {
+        max-width:100%;
+    } 
+
+    .widget.extendednavigation ul.align-right li.folder {
+        background-position: 12px center;
+        padding-right: 0;
+    }
+    .widget .extendednavigation a.menu-pull:after {
+        right: 42%;
+    }
+    .companyheader .companyname a {
+          font-size: bkscale(@font-swatch1-font-size,1);
+          line-height:bkscale(@font-swatch1-line-height,1);
+          padding-bottom:0px;  
+    }
+
+    .widget .extendednavigation a.pull:after {
+        top:-2px;
+    }
+    .widget .extendednavigation a.pull {
+        width:100%;
+    }
+    .widget.feature .spare {
+        width:60%;
+    }
+    .headerprofile {
+        padding: 0 0 20px 0;
+    }
+    .widget.feature h2, .widget.feature h3 {
+        display:block;
+    }
+
+    .widget.feature .feature-bgimg .content {
+        padding:0;
+    }
+
+    .companyheader {
+        padding: 0;
+        margin: 0px auto;
+        display: table;
+        float:none;
+    }
+
+    .widget .extendednavigation a.pull:after {
+        content: "";
+        background: image('/images/nav-icon.png') no-repeat; 
+        width: 18px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        left: auto;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    header.bk-header {
+        padding:40px 0 20px 0;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .widget.extendednavigation .bk-overlay {
+        width:100%;
+    }
+    .widget.menusections ul li a:before, .widget.menusections ul li a:after {
+        display:none;
+    }
+    .widget .extendednavigation {
+        display:block;
+        float:none;
+    }
+    .widget.logo {
+        float:none;
+        margin-right:0;
+    }
+    .widget.extendednavigation {
+        float:none;
+    }
+    .widget.feature h2, .widget.feature h3, .feature-btn {
+        margin:0 5%;
+    }
+    .widget .extendednavigation ul {
+        padding-top:0;
+    }
+    .widget.feature h2, .widget.feature h3, .feature-btn {
+        text-align:center;
+    }
+
+}
+
+/* ===============================
+   9. IPHONE WIDTH
+   =============================== */
+
+@media only screen and (max-width: 480px) {
+
+  /* UL ALIGN RIGHT */
+
+    .widget.extendednavigation ul.align-right li.folder {
+        background-position: 12px center;
+        padding-right: 0;
+    }
+    .widget .extendednavigation a.menu-pull:after {
+        right: 38%;
+    }
+
+    .widget.menusections a.pull {
+        top:20px;
+    }
+
+    .companyheader .companyname a {
+          font-size: bkscale(@font-swatch10-font-size,0.9);
+          line-height:bkscale(@font-swatch10-line-height,0.9);
+          padding-bottom:0px;  
+    }
+
+    .bk-content-text p {
+        font-size: bkscale(@font-swatch5-font-size,1.2);
+        line-height:bkscale(@font-swatch5-line-height,1.2);
+    }
+
+    h1 {
+          font-size: bkscale(@font-swatch1-font-size,0.7);
+          line-height:bkscale(@font-swatch1-line-height,0.7);
+          letter-spacing:bkscale(@font-swatch1-letter-spacing,0.2);
+    }
+
+    h2 {
+          font-size: bkscale(@font-swatch2-font-size,0.6);
+          line-height:bkscale(@font-swatch2-line-height,0.6);
+          letter-spacing:bkscale(@font-swatch2-letter-spacing,0.5);
+    }
+    .widget.feature h2 {
+          font-size: bkscale(@font-swatch8-font-size,0.7);
+          line-height:bkscale(@font-swatch8-line-height,0.7);
+    }
+    .widget.feature h3 {
+          font-size: bkscale(@font-swatch9-font-size,0.9);
+          line-height:bkscale(@font-swatch9-line-height,0.9);
+    }
+    .menu-subsection-name {
+        font-size: bkscale(@font-swatch2-font-size,0.6);
+          line-height:bkscale(@font-swatch2-line-height,0.6);
+    }
+    .widget.feature button {
+           font-size: bkscale(@font-swatch5-font-size,0.8);
+          line-height:bkscale(@font-swatch5-line-height,0.8);
+    }
+
+    .widget.contactform form {
+        padding-top:10px;
+    }
+    .widget.logo img {
+        width:60px;
+    }
+
+    .bk-pt-default .widget .extendednavigation ul li:last-child {
+        border-bottom:0;
+    }
+
+    .widget.feature .feature-bgimg {
+        height:0;
+    }
+
+    .widget.profile .bk-profile-socialicons {
+        padding:0;
+    }
+
+    .widget .extendednavigation a.pull:after {
+        top:-2px;
+    }
+
+    .clicktocall a {
+        background-color:@color-swatch3;
+        font-family:@font-swatch7-font-family;
+        font-weight: @font-swatch6-font-weight;
+        color:@font-swatch7-color;
+        line-height:@font-swatch7-line-height;
+        letter-spacing: @font-swatch7-letter-spacing;
+        font-size: @font-swatch7-font-size; 
+    }
+
+    .clicktocall a:hover {
+        background-color:darken(@color-swatch3,5%);
+    }
+    .widget.logo img {
+        width: 80%;
+    }
+    .widget.feature .feature-bgimg .content {
+        height:300px;
+    }
+    .feature-btn .btn span {
+        padding:15px;
+    }
+
+}
+
+/* ===============================
+   9. Print override
+   =============================== */
+.print-mixin {
+    .headerrow,
+    .bk-footer,
+    .bk-header .widget.profile  {
+        display:none;
+    }
+    .companyheader {
+        padding:0px;
+    }
+    .menu-container {
+        display:none;
+    }
+    .menu-info {
+        margin:0px;
+    }
+    .widget.menu .main.wrapper {
+        page-break-before:always;
+    }
+    .widget.menu .menu-item-image-wrap {
+        height:150px;
+    }
+}
+
+@media print {
+    .print-mixin;
+}
+
+.bk-print {
+    .print-mixin;
+}
+
