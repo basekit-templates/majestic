@@ -64,17 +64,17 @@
        "title": "Lato",
         "font1": {
             "font-family": "\"Oxygen\", \"Helvetica\", Arial, sans-serif",
-            "font-size": "40px",
+            "font-size": "36px",
             "font-weight": "400",
-            "line-height": "50px",
+            "line-height": "42px",
             "color": "@color-swatch1",
             "letter-spacing": "2px"
         },
         "font2": {
             "font-family": "\"Oxygen\", \"Helvetica\", Arial, sans-serif",
-            "font-size": "32px",
+            "font-size": "28px",
             "font-weight": "400",
-            "line-height": "38px",
+            "line-height": "34px",
             "color": "@color-swatch1",
             "letter-spacing": "2px"
         },
