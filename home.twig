@@ -17,14 +17,18 @@
 	  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 </div>
 
-<div class="wrapper clearfix">
+<div class="main wrapper clearfix">
     {{zone('main')|raw}}
 </div>
 
 <footer class="bk-footer">
     <div class="footer-container wrapper">
-        {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
-        {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+      <div class="leftfooter">
+          {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </div>
+        <div class="rightfooter">
+          {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
     </div>
 </footer>
 
