@@ -87,6 +87,75 @@ a {
 } 
 
 /* ===============================
+   HEADER
+   =============================== */
+
+.bk-header {
+    padding: 20px 0;
+    background-color:lighten(@color-swatch3,10%);
+    border-bottom:8px solid lighten(@color-swatch3,30%);
+}
+
+.companyheader {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 6px 0 0;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+    display: block;
+    float: left;
+}
+
+.widget.companyname a {
+    font-family: @font-swatch10-font-family;
+    font-weight: @font-swatch10-font-weight;
+    color: @font-swatch10-color;
+    line-height: @font-swatch10-line-height;
+    letter-spacing: @font-swatch10-letter-spacing;
+    font-size: @font-swatch10-font-size;
+    
+}
+
+.widget.companyname a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* LOGO */
+
+.widget.logo {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+.widget.extendednavigation {
+    float:right;
+    margin-top:10px;
+}
+
+.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+    color:lighten(@color-swatch3,35%);
+}
+
+.widget .extendednavigation ul li:hover ul {
+    background-color:lighten(@color-swatch3,15%);
+}
+
+.widget .extendednavigation ul li.folder:after {
+    border-top-color:@color-swatch1;
+    top: 49%;
+}
+
+/* ===============================
    FEATURE
    =============================== */
 
@@ -132,75 +201,6 @@ a {
 
 .widget.feature h2, .widget.feature h3, .feature-btn {
     margin:0 15%;
-}
-
-/* ===============================
-   EXTENDED NAVIGATION
-   =============================== */
-
-.widget.extendednavigation {
-    float:right;
-    margin-top:10px;
-}
-
-.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
-    color:lighten(@color-swatch3,35%);
-}
-
-.widget .extendednavigation ul li:hover ul {
-    background-color:lighten(@color-swatch3,15%);
-}
-
-.widget .extendednavigation ul li.folder:after {
-    border-top-color:@color-swatch1;
-    top: 49%;
-}
-
-/* ===============================
-   HEADER
-   =============================== */
-
-.bk-header {
-    padding: 20px 0;
-    background-color: @color-swatch2;
-    border-bottom:8px solid lighten(@color-swatch3,30%);
-}
-
-.companyheader {
-    display: block;
-    float: left;
-    padding: 0;
-    margin: 6px 0 0;
-}
-
-/* COMPANY NAME */
-
-.widget.companyname {
-    display: block;
-    float: left;
-}
-
-.widget.companyname a {
-    font-family: @font-swatch10-font-family;
-    font-weight: @font-swatch10-font-weight;
-    color: @font-swatch10-color;
-    line-height: @font-swatch10-line-height;
-    letter-spacing: @font-swatch10-letter-spacing;
-    font-size: @font-swatch10-font-size;
-    
-}
-
-.widget.companyname a:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* LOGO */
-
-.widget.logo {
-    display: block;
-    float: left;
-    margin-right: 10px;
 }
 
 /* ===============================
