@@ -218,6 +218,8 @@ a {
 .contactform input, .contactform textarea, .widget.profile form fieldset input, .signupform fieldset input {
     background-color:lighten(@color-swatch3,20%);
     border:0;
+    border-radius:0;
+    text-indent:5px;
 }
 
 .widget.profile a {
@@ -228,12 +230,12 @@ a {
     background-color:@color-swatch3;
 }
 
-.contactform input, .contactform textarea, .widget.profile form fieldset input, .signupform fieldset input {
-    text-indent:5px;
-}
-
 .widget.responsiveslideshow .slideshow-widget .btn-next, .widget.responsiveslideshow .slideshow-widget .btn-prev {
     padding:5px;
+}
+
+.widget.responsiveslideshow span {
+    color:#000000;
 }
 
 /* ===============================
@@ -243,6 +245,7 @@ a {
     background:@color-swatch3;
     padding:15px 20px;
     border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
     &:hover {
         background: lighten(@color-swatch3, 15%);
     }
@@ -256,10 +259,12 @@ a {
     padding: 15px 20px;
     background-color:@color-swatch3;
     border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
 }
 
 .contactform textarea {
     height:150px;
+    border-radius:0;
 }
 
 /* ===============================
@@ -270,10 +275,12 @@ a {
     padding:10px 13px 11px 13px;
     background-color: @color-swatch3;
     border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
 }
 
 .signupform fieldset input {
     height:51px;
+    border-radius:0;
 }
 
 /* ===============================
@@ -285,11 +292,13 @@ a {
     padding:12px;
     border:3px solid lighten(@color-swatch3,15%);
     margin-left: -3px;
+    border-radius:0;
 }
 
 .widget.profile form fieldset input {
     width:65%;
     height:47px;
+    border-radius:0;
     @media @tablet {
         width: 90%;
     }
@@ -306,6 +315,7 @@ a {
     background-color:@color-swatch3;
     padding:20px 10px 20px 40px;
     border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
 }
 
 /* ===============================
@@ -314,6 +324,8 @@ a {
 
 .widget.tweet a {
     background-color:@color-swatch3;
+    border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
 }
 
 /* ===============================
@@ -324,6 +336,7 @@ a {
     background-color:@color-swatch3;
     padding:20px 10px 20px 40px;
     border:3px solid lighten(@color-swatch3,15%);
+    border-radius:0;
 }
 
 .widget.dropbox button:hover {
@@ -607,6 +620,12 @@ blockquote:before {
     }
     .feature-btn .btn span {
         padding:15px;
+    }
+    .signupform fieldset input {
+        width: 77%;
+    }
+    .widget.clicktocall a {
+        border:3px solid lighten(@color-swatch3,15%);
     }
 
 }
