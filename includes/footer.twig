@@ -1,23 +1,13 @@
-{% extends "layout.twig" %}
-{% block class %}bk-pt-default{% endblock %}
-{% block content %}
-
+<div class="template-footer">
     <!-- Container -->
     <div class="container">
 
         <!-- Page Content -->
         <section class="template-content">
-
-            <!-- Main Widget Zone -->
-            {{zone('main')|raw}}
-
+            {{widget('profile', 'email', { 'profileType':'email', 'email':'profile'})|raw}}
         </section>
         <!-- End Page Content -->
 
     </div>
     <!-- End Container -->
-
-{% endblock %}
-
-
-
+</div>

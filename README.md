@@ -1,4 +1,2 @@
 Majestic
-=====
-
-Enom Luxury Template
+========
