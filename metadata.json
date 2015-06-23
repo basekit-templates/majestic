@@ -2,7 +2,7 @@
     "name": "Majestic",
     "widgetVersion":2,
     "thumbnail": "majestic.png",
-    "screenshot": "majestic.png",
+    "screenshot": "majestic.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
@@ -136,7 +136,7 @@
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "34px",
-            "color": "@color-swatch3",
+            "color": "@color-swatch6",
             "letter-spacing": "inherit"
         }
     }
