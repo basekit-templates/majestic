@@ -604,6 +604,12 @@
 
 .summary-table .cell--image {
     max-width: 144px;
+    @media @mobile {
+        max-height: 170px;
+        img {
+            max-height: 150px;
+        }
+    }
 }
 
 .ecombasketsummary .summary-item-link {
