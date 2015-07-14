@@ -457,106 +457,108 @@
 // Basket Widget
 // -----------------------------
 
-.basket-item {
-    position: relative;
-    padding-bottom: 20px;
-    border-bottom: 1px solid darken(@color-swatch1, 8%);
-}
-
-// Display basket image and content inline
-
-.basket-item-image,
-.basket-item-details {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    @media @tablet {
-        width: 100%;
-        margin-right: 0;
+.ecombasket {
+    .basket-item {
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 1px solid darken(@color-swatch1, 8%);
     }
-}
 
-// Item Remove Button
+    // Display basket image and content inline
 
-.item-remove {
-    width: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-    // Remove icon spacing
-    &:before {
-        margin-right: 0;
-    }
-}
-// Hide button text
-
-.remove-text {
-    display: none;
-}
-
-// Basket Image
-
-.basket .image {
-    max-height: 200px;
-    max-width: 200px;
-    @media @mobile {
-        max-height: inherit;
-    }
-}
-
-// Quantity Field
-
-.quantity-field {
-    background: transparent;
-    padding: 0 10px;
-}
-
-.quantity-wrap {
-    .button--quantity {
-        width: 22px;
-        height: 22px;
-        margin: 0;
-        line-height: 0;
-    }
-    // button rounded corners
-    .quantity-minus {
-        -webkit-border-radius: 3px 0 0 3px;
-        -moz-border-radius: 3px 0 0 3px;
-        border-radius: 3px 0 0 3px;
-    }
-    .quantity-plus {
-        -webkit-border-radius: 0 3px 3px 0;
-        -moz-border-radius: 0 3px 3px 0;
-        border-radius: 0 3px 3px 0;
-    }
-    // increase button size for mobile
-    @media @mobile {
-        max-width: 50%;
-        .quantity-field {
-            height: 40px;
-            padding: 9px;
-
+    .basket-item-image,
+    .basket-item-details {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        @media @tablet {
+            width: 100%;
+            margin-right: 0;
         }
+    }
+
+    // Item Remove Button
+
+    .item-remove {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        // Remove icon spacing
+        &:before {
+            margin-right: 0;
+        }
+    }
+    // Hide button text
+
+    .remove-text {
+        display: none;
+    }
+
+    // Basket Image
+
+    .basket .image {
+        max-height: 200px;
+        max-width: 200px;
+        @media @mobile {
+            max-height: inherit;
+        }
+    }
+
+    // Quantity Field
+
+    .quantity-field {
+        background: transparent;
+        padding: 0 10px;
+    }
+
+    .quantity-wrap {
         .button--quantity {
+            width: 22px;
+            height: 22px;
             margin: 0;
-            width: 25%;
-            height: 40px;
+            line-height: 0;
+        }
+        // button rounded corners
+        .quantity-minus {
+            -webkit-border-radius: 3px 0 0 3px;
+            -moz-border-radius: 3px 0 0 3px;
+            border-radius: 3px 0 0 3px;
+        }
+        .quantity-plus {
+            -webkit-border-radius: 0 3px 3px 0;
+            -moz-border-radius: 0 3px 3px 0;
+            border-radius: 0 3px 3px 0;
+        }
+        // increase button size for mobile
+        @media @mobile {
+            max-width: 50%;
+            .quantity-field {
+                height: 40px;
+                padding: 9px;
+
+            }
+            .button--quantity {
+                margin: 0;
+                width: 25%;
+                height: 40px;
+            }
         }
     }
-}
 
-// Basket Total
+    // Basket Total
 
-.basket-total {
-    padding-bottom: 20px;
-    border-bottom: 1px solid darken(@color-swatch1, 8%);
-}
+    .basket-total {
+        padding-bottom: 20px;
+        border-bottom: 1px solid darken(@color-swatch1, 8%);
+    }
 
-// View Basket Button
+    // View Basket Button
 
-.view-basket {
-    margin: 20px 0;
+    .view-basket {
+        margin: 20px 0;
+    }
 }
 
 
